@@ -6,6 +6,7 @@ default_view = "terminal"     # Which view to show first
 max_history = 50             # URL history limit  
 stream_delay = 0.01          # Streaming delay for AI responses (seconds)
 app_title = "Spegel"         # Application title
+llm_provider = "auto"        # "auto" (Claude first, then Gemini), "claude", or "gemini"
 
 [ui]
 show_icons = true            # Show emoji icons in tabs

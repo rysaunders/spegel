@@ -48,6 +48,7 @@ class Settings(BaseModel):
     max_history: int = 50
     stream_delay: float = 0.01
     app_title: str = "Spegel"
+    llm_provider: str = "auto"  # "auto", "claude", "gemini"
 
 
 class UI(BaseModel):
@@ -75,6 +76,7 @@ DEFAULT_CONFIG_DICT: Dict[str, Any] = {
         "max_history": 50,
         "stream_delay": 0.01,
         "app_title": "Spegel",
+        "llm_provider": "auto",
     },
     "ui": {"show_icons": True, "compact_mode": False},
     "views": [

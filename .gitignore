@@ -9,3 +9,21 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Local configuration files (may contain API keys)
+.spegel.toml
+
+# Development and testing files
+test_*.py
+*_test.py
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

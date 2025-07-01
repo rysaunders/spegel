@@ -310,7 +310,7 @@ class Spegel(App):
         self.url_history: List[str] = []  # History of visited URLs for back navigation
 
         # Initialize LLM client via abstraction layer
-        self.llm_client, self.llm_available = get_default_client()
+        self.llm_client, self.llm_available = get_default_client(self.config.settings.llm_provider)
         
         # Initialize managers
         self.scroll_manager = ScrollManager(self)

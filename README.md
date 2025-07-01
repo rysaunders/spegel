@@ -29,11 +29,19 @@ $ pip install -e .
 ```
 
 ## API Keys
-Spegel is currently only support Gemini 2.5 Flash, to use it you need to provide your API key in the env
+Spegel supports both Claude and Gemini. You need at least one API key:
 
+**For Claude (recommended):**
+```
+ANTHROPIC_API_KEY=sk-ant-...
+```
+
+**For Google Gemini:**
 ```
 GEMINI_API_KEY=...
 ```
+
+By default, Spegel will use Claude if available, otherwise Gemini. You can force a specific provider in your config file.
 
 
 ## Usage
